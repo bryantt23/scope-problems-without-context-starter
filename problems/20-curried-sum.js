@@ -43,7 +43,24 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
 ***********************************************************************/
 
 // your code here
-
+function curriedSum(finalNumCt) {
+  let arr = [];
+  let numCt = 0;
+  function inner(num) {
+    numCt++;
+    arr.push(num);
+    if (numCt === finalNumCt) {
+      let sum = 0;
+      for (const a of arr) {
+        sum += a;
+      }
+      return sum;
+    } else {
+      return inner;
+    }
+  }
+  return inner;
+}
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
