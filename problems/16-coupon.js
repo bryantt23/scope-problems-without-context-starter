@@ -16,6 +16,11 @@ console.log(twentyPercent([10, 20, 30])); // [ 8, 16, 24 ]
 ***********************************************************************/
 
 // your code here!
+function coupon(discount) {
+  return prices => {
+    return prices.map(price => price * (1 - discount));
+  };
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

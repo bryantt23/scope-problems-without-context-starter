@@ -26,6 +26,20 @@ Example 3:
 ***********************************************************************/
 
 // your code here
+function coinCollector(finalNumCt) {
+  let arr = [];
+  let numCt = 0;
+  function inner(num) {
+    numCt++;
+    arr.push(num);
+    if (numCt === finalNumCt) {
+      return arr;
+    } else {
+      return inner;
+    }
+  }
+  return inner;
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
