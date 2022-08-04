@@ -23,6 +23,14 @@ console.log(smoothie2("pineapple"));
 ***********************************************************************/
 
 // your code here
+function smoothieMachine() {
+  let ingredients = [];
+  return (...args) => {
+    ingredients = [...ingredients, ...args];
+    const res = ingredients.join(' and ');
+    return `I'm having a smoothie with ${res}`;
+  };
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
