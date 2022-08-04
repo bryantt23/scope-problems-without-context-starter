@@ -23,6 +23,14 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
 ***********************************************************************/
 
 // your code here
+function lazyAdder(start) {
+  let sum = start;
+  return num => {
+    return num2 => {
+      return sum + num + num2;
+    };
+  };
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

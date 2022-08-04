@@ -29,7 +29,20 @@ Example 4:
 ***********************************************************************/
 
 // your code here
+function countDownTimer(n) {
+  if (n === 0) {
+    return 'Happy New Year!';
+  }
 
+  function helper() {
+    n--;
+    if (n === 0) {
+      return 'Happy New Year!';
+    }
+    return helper;
+  }
+  return helper;
+}
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

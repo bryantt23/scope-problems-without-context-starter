@@ -26,6 +26,19 @@ console.log(table2(75)); // STILL prints 6
 
 // your code here
 
+function recVolume(start) {
+  let volume = start,
+    argCt = 1;
+  return num => {
+    argCt++;
+    if (argCt > 3) {
+      return volume;
+    }
+    volume *= num;
+    return volume;
+  };
+}
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
