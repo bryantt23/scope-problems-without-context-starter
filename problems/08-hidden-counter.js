@@ -17,6 +17,13 @@ hidden2(); // returns 1
 
 // your code here!
 
+function hiddenCounter() {
+  let ct = 1;
+  return () => {
+    return ct++;
+  };
+}
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
